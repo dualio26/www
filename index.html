@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+      <img class="backgroundimage" src="https://www.wargamer.com/wp-content/uploads/2021/01/dnd-lost-mines-of-phandelver-guide-chapter-4-wave-echo-cave-artwork.jpg" alt="BGimage">
+    <div class="container">
+        <p style="color: #d82525;">Enter Character name</p>
+      <input type="text" id="username" />
+      <a href="#" onclick="searchURL()">Submit</a>
+    </div>
+  </body>
+
+  <script>
+    var input = document.getElementById("username");
+
+    function searchURL() {
+      window.location = "Result.php?user=" + input.value;
+    }
+  </script>
+</html>
